@@ -1,4 +1,150 @@
-* {
+:root {
+  --darkGray: hsl(234, 29%, 20%);
+  --charcoal: hsl(235, 18%, 26%);
+  --grey: hsl(231, 7%, 60%);
+  --white: hsl(0, 0%, 100%);
+  --tomato: hsl(4, 100%, 67%);
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+.regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
 body {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--charcoal);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  width: 900px;
+  background-color: var(--white);
+  display: flex;
+  border-radius: 25px;
+  padding: 20px 25px 20px 25px;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--darkGray);
+  padding: 0 45px 0 40px;
+}
+h1 {
+  font-size: 56px;
+  margin-bottom: 25px;
+}
+p {
+  margin-bottom: 25px;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+li > img {
+  margin-right: 12px;
+  width: 18px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+.labelInput {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.labelInput > p {
+  margin-bottom: 0px;
+}
+.labelError {
+  color: red;
+}
+input {
+  display: block;
+  width: 100%;
+  border-radius: 12px;
+  padding: 15px;
+  border: 1px solid var(--grey);
+  margin-bottom: 12px;
+}
+::-webkit-input-placeholder {
+  color: var(--grey);
+}
+button {
+  color: var(--white);
+  border-radius: 12px;
+  padding: 15px;
+  border: none;
+  background-color: var(--darkGray);
+}
+button:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 157, 150, 1) 0%,
+    rgba(255, 110, 87, 1) 50%,
+    rgba(255, 171, 87, 1) 100%
+  );
+  box-shadow: 4px 3px 10px var(--tomato);
+  cursor: pointer;
+}
+.right-side {
+}
+img {
+  height: 100%;
+  border-radius: none;
+}
+
+/* .left-side {
+  width: 425px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px 30px 10px 30px;
+}
+.right-side {
+  width: 425px;
+}
+h1 {
+  font-size: 56px;
+  color: var(--charcoal);
+  width: 100%;
+} */
+
+/* Small Devices (Tablets) */
+@media (max-width: 625px) {
+  .desktopImg {
+    display: none;
+  }
+}
+
+/* Medium Devices (Laptops and Desktops) */
+@media (min-width: 626px) {
+  .mobileImg {
+    display: none;
+  }
 }
