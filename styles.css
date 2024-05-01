@@ -137,6 +137,13 @@ h1 {
 
 /* Small Devices (Tablets) */
 @media (max-width: 625px) {
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  body {
+    background-color: red;
+  }
   .desktopImg {
     display: none;
   }
