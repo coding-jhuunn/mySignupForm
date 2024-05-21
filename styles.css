@@ -32,12 +32,21 @@ main {
   flex-direction: column-reverse;
   background-color: var(--white);
 }
+p,
+li {
+  line-height: 1.6;
+  font-size: 17px;
+}
 .desktopImg {
   display: none;
 }
-h1 {
+.h1Updated {
   color: var(--darkGray);
   font-size: 40px;
+  margin-bottom: 25px;
+}
+.details {
+  margin-bottom: 25px;
 }
 ul {
   list-style-type: none;
@@ -56,6 +65,7 @@ li > img {
 form {
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
 }
 .labelInput {
   display: flex;
@@ -64,7 +74,9 @@ form {
 }
 .labelInput > p {
   margin-bottom: 0px;
+  font-size: 14px;
 }
+
 .labelError {
   color: red;
 }
@@ -72,9 +84,9 @@ input {
   display: block;
   width: 100%;
   border-radius: 12px;
-  padding: 15px;
+  padding: 20px;
   border: 1px solid var(--grey);
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 }
 ::-webkit-input-placeholder {
   color: var(--grey);
@@ -82,7 +94,7 @@ input {
 button {
   color: var(--white);
   border-radius: 12px;
-  padding: 15px;
+  padding: 20px;
   border: none;
   background-color: var(--darkGray);
 }
@@ -100,12 +112,17 @@ button:hover {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin-top: 38px;
-  padding: 10px 25px 10px 25px;
+  padding: 15px 25px 35px 25px;
+}
+.right-side {
+  width: 100%;
+  height: 350px;
 }
 .mobileImg {
+  height: 90%;
   width: 100%;
+  object-fit: cover;
+  border-radius: 0px 0px 25px 25px;
 }
 @media (max-width: 575px) {
 }
