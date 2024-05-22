@@ -258,9 +258,15 @@ button:hover {
   }
   /* pop up syles*/
 }
-.display {
+
+.toggleError {
   display: none;
 }
-.popup {
+
+.display {
   display: flex;
+}
+
+.popup {
+  display: none;
 }
