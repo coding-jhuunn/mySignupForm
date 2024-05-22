@@ -124,6 +124,33 @@ button:hover {
   object-fit: cover;
   border-radius: 0px 0px 25px 25px;
 }
+/* pop up syles*/
+.popup {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 25px;
+}
+.popTop {
+  margin-top: 125px;
+}
+.popupHeader {
+  font-size: 38px;
+  color: var(--charcoal);
+  margin-top: 50px;
+}
+.popupDetail {
+  color: var(--charcoal);
+  margin-top: 25px;
+  font-size: 18px;
+}
+.popupBtn {
+  width: 100%;
+}
+/* pop up syles*/
 
 /* Small Devices (Tablets) */
 @media (min-width: 576px) and (max-width: 1079px) {
@@ -138,6 +165,32 @@ button:hover {
   .h1Updated {
     font-size: 54px;
   }
+  /* pop up syles*/
+  .popup {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 45px;
+  }
+  .popTop {
+    margin-top: 125px;
+  }
+  .popupHeader {
+    font-size: 46px;
+    color: var(--charcoal);
+    margin-top: 50px;
+  }
+  .popupDetail {
+    color: var(--charcoal);
+    margin-top: 25px;
+    font-size: 22px;
+  }
+  .popupBtn {
+    width: 100%;
+  }
+  /* pop up syles*/
 }
 
 /* Medium Devices (Laptops and Desktops) */
@@ -180,4 +233,34 @@ button:hover {
   ul {
     margin-bottom: 10px;
   }
+  /* pop up syles*/
+  .popup {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    background-color: var(--white);
+    border-radius: 25px;
+    padding: 60px 60px 60px 60px;
+  }
+  .popTop {
+    margin-top: 0px;
+  }
+  .popupImage {
+    height: 80px;
+  }
+  .popupHeader {
+    font-size: 56px;
+  }
+  .popupDetail {
+    font-size: 18px;
+  }
+  .popupBtn {
+  }
+  /* pop up syles*/
+}
+.display {
+  display: none;
+}
+.popup {
+  display: flex;
 }
