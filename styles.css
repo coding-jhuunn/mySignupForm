@@ -78,6 +78,7 @@ form {
 }
 
 .labelError {
+  display: none;
   color: red;
 }
 input {
@@ -260,13 +261,12 @@ button:hover {
 }
 
 .toggleError {
-  display: none;
+  display: flex;
 }
 
 .display {
   display: flex;
 }
-
-.popup {
+.noDisplay {
   display: none;
 }

@@ -13,21 +13,17 @@
     />
   </head>
   <body>
-    <div class="popup" id="popup">
+    <div class="popup noDisplay" id="divPopUp">
       <div class="popTop">
         <img src="images/icon-success.svg" alt="" class="popupImage" />
         <h1 class="popupHeader regular bold">Thanks for subscribing!</h1>
-        <p class="popupDetail regular">
-          A confirmation email has been sent to
-          <span class="bold">emailAdd</span>. Please open it and click the
-          button inside to confirm your subscription.
-        </p>
+        <p class="popupDetail regular" id="popupDetail"></p>
       </div>
       <div>
-        <button class="popupBtn">Dismiss message</button>
+        <button class="popupBtn" id="popupBtn">Dismiss message</button>
       </div>
     </div>
-    <main class="display">
+    <main class="display" id="main">
       <div class="left-side regular">
         <h1 class="bold h1Updated">Stay updated!</h1>
         <p class="details">
@@ -47,9 +43,7 @@
         <form action="#">
           <div class="labelInput">
             <p class="labelEmail bold">Email address:</p>
-            <p class="labelError toggleError" id="labelError">
-              Valid email required
-            </p>
+            <p class="labelError" id="labelError">Valid email required</p>
           </div>
           <input type="text" placeholder="email@company.com" id="inputEmail" />
           <button class="bold" id="subscribeBtn">
