@@ -29,7 +29,7 @@ subscribeBtn.addEventListener("click", () => {
     popUpDiv.classList.add("display");
 
     popupDetail.innerHTML = ` A confirmation email has been sent to
-    <span class="bold">${inputEmail.value}</span>. Please open it and click the
+    <span class="bold popupDetail">${inputEmail.value}</span>. Please open it and click the
     button inside to confirm your subscription.`;
 
     console.log("success");
